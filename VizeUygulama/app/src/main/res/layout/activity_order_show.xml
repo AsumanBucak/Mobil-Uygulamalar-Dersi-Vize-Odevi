@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/colorBackground"
+    tools:context=".OrderShowActivity">
+
+    <ImageView
+    android:id="@+id/imageViewLogo"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:src="@drawable/asulogo"
+    android:layout_marginTop="8dp"
+    android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewOrderSelectTuzAci"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="#C53D3D"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="İçinde"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textColor="#C53D3D"/>
+
+    <TextView
+        android:id="@+id/textViewSelectedEkstra"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textColor="#C53D3D"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Olsun"
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textColor="#C53D3D"/>
+
+    <TextView
+        android:id="@+id/textViewEkstraIstek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:textColor="#C53D3D"/>
+
+    <TextView
+        android:id="@+id/textViewYeniSiparis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Yeni Sipariş"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:layout_marginTop="16dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/exit"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="#FF0303">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_baseline_close_24"
+            app:tint="@color/white" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

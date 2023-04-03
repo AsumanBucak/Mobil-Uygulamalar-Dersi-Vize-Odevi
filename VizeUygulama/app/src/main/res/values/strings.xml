@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Vize Uygulama</string>
+
+    <string-array name="corba_list">
+        <item>Ezogelin</item>
+        <item>Düğün</item>
+        <item>Mercimek</item>
+        <item>Brokoli</item>
+        <item>Kelle-Paça</item>
+        <item>Yayla</item>
+        <item>Şehriye</item>
+        <item>Domates</item>
+        <item>Tarhana</item>
+        <item>Mantar</item>
+        <item>İşkembe</item>
+        <item>Tavuk</item>
+    </string-array>
+
+</resources>

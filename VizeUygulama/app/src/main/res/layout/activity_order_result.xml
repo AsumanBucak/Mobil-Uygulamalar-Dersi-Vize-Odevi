@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".OrderResultActivity"
+    android:background="@color/colorBackground">
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/asulogo"
+        android:layout_marginTop="8dp"
+        android:layout_gravity="center"/>
+
+    <TextView
+        android:id="@+id/textViewOrderName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="dfsfsdsdffsd"
+        android:textSize="22sp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="#C53D3D"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Tuz Oranı"
+            android:textColor="@color/white"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderTuz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="6"
+            android:stepSize="3"
+            app:labelBehavior="gone"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="8dp"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:text="Acı Oranı"/>
+
+        <com.google.android.material.slider.Slider
+            android:id="@+id/sliderAci"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:valueFrom="0"
+            android:valueTo="6"
+            android:stepSize="3"
+            app:labelBehavior="gone"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C53D3D"
+            android:text="Lütfen İsteklerinizi işaretleyiniz"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchSarimsak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sarımsak"
+                android:textColor="@color/white"
+                android:layout_marginEnd="16dp"
+                android:visibility="invisible"
+                />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchNane"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nane"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                android:layout_marginEnd="16dp"
+                />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchDil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dil"
+                android:textColor="@color/white"
+                android:visibility="invisible"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchTerbiye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Terbiye"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchBeyin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Beyin"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchSirke"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sirke"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchKrema"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Krema"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchYag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Yağ"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchKasar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kaşar"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="8dp"
+            >
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchKitir"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Kıtır"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchLimon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
+                android:text="Limon"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+            <androidx.appcompat.widget.SwitchCompat
+                android:id="@+id/switchTozBiber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Toz Biber"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textViewResultEkstra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#C53D3D"
+            android:text=""
+            android:visibility="gone"
+            android:layout_marginStart="16dp"
+            android:textSize="18sp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#C53D3D"
+        android:text="Ekstra İsteklerinizi Yazabilirsiniz"
+        android:layout_marginStart="16dp"
+        android:textSize="18sp"/>
+
+    <EditText
+        android:id="@+id/editTextEkstra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:textColorHint="#C3C3C3"
+        android:textColor="@color/white"
+        android:hint="Başka bir arzunuz?"/>
+
+    <Button
+        android:id="@+id/buttonSiparis"
+        android:layout_width="150dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:text="Sipariş ver"/>
+
+
+</LinearLayout>
